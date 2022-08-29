@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Testando a API do GIPHY</title>
+  </head>
+  <body>
+    <h1>Testando a API do GIPHY</h1>
+    <p>Digite no campo de busca o GIF a ser encontrado</p>
+
+    <main>
+      <section>
+        <div class="form-box">
+          <form>
+            <label for="">Procurar: </label>
+            <input name="search" type="search" autocomplete="off" autofocus />
+            <button>Buscar</button>
+          </form>
+        </div>
+        <div class="form-box">
+          <button id="eraser">Limpar</button>
+        </div>
+      </section>
+
+      <div id="image"></div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

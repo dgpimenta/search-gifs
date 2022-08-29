@@ -1,0 +1,64 @@
+html {
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background: black;
+  color: green;
+  text-align: center;
+}
+
+h1 {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+form label {
+  font-size: 0.8rem;
+  color: grey;
+  margin-right: 0.3rem;
+}
+
+input {
+  /* margin-bottom: 1rem; */
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+}
+
+button {
+  border-radius: 0.2rem;
+  /* margin-bottom: 2rem; */
+
+  color: white;
+  background: indigo;
+
+  padding: 0.3rem;
+
+  transition: filter 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+
+  filter: brightness(0.8);
+}
+
+button#eraser {
+  margin-left: 0.15rem;
+}
+
+img {
+  width: 100%;
+  max-width: 80%;
+  margin-bottom: 2rem;
+
+  border-radius: 0.3rem;
+}
