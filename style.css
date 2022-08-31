@@ -1,46 +1,38 @@
-html {
-  font-size: 20px;
-  line-height: 1.6;
-  font-family: Roboto, sans-serif;
+/*RESET*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+/*GERAL*/
 body {
-  background: black;
-  color: green;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  line-height: 1.6;
+
+  background: #fbfbfb;
+  color: #4b0082;
   text-align: center;
-}
 
-h1 {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
-
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
-form label {
-  font-size: 0.8rem;
-  color: grey;
-  margin-right: 0.3rem;
-}
-
-input {
-  /* margin-bottom: 1rem; */
-  border-radius: 0.2rem;
-  padding: 0.3rem;
+a {
+  text-decoration: none;
+  color: white;
 }
 
 button {
   border-radius: 0.2rem;
-  /* margin-bottom: 2rem; */
+  border: none;
 
   color: white;
   background: indigo;
 
-  padding: 0.3rem;
+  padding: 0.4rem;
 
   transition: filter 0.3s;
 }
@@ -48,17 +40,108 @@ button {
 button:hover {
   cursor: pointer;
 
-  filter: brightness(0.8);
+  filter: brightness(1.2);
+}
+
+/*HEADER*/
+
+header {
+  padding: 2rem;
+  background: indigo;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+/*MAIN*/
+main {
+  background: #f2f2f2;
+  width: 90%;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+
+  flex: 1;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding-block: 0.8rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border: solid 2px #4b0082;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
 }
 
 button#eraser {
   margin-left: 0.15rem;
 }
 
-img {
+main img {
   width: 100%;
   max-width: 80%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   border-radius: 0.3rem;
+}
+
+/*FOOTER*/
+footer {
+  background: #4b0082;
+  color: white;
+  font-size: 1rem;
+
+  margin-top: auto;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer img {
+  width: 8rem;
+}
+
+/*****@MEDIA*****/
+
+@media (max-width: 368px) {
+  header {
+    padding: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  input {
+    width: 6rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  footer img {
+    width: 6rem;
+  }
 }

@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Testando a API do GIPHY</title>
   </head>
   <body>
-    <h1>Testando a API do GIPHY</h1>
-    <p>Digite no campo de busca o GIF a ser encontrado</p>
+    <header>
+      <h1>Testando a API do GIPHY</h1>
+    </header>
 
     <main>
+      <p>Digite no campo de busca o GIF a ser encontrado</p>
       <section>
         <div class="form-box">
           <form>
-            <label for="">Procurar: </label>
-            <input name="search" type="search" autocomplete="off" autofocus />
+            <!-- <label for="">Digite sua busca: </label> -->
+            <input
+              name="search"
+              type="search"
+              placeholder="Digite"
+              autocomplete="off"
+              autofocus
+            />
             <button>Buscar</button>
           </form>
         </div>
@@ -22,10 +32,15 @@
           <button id="eraser">Limpar</button>
         </div>
       </section>
-
       <div id="image"></div>
     </main>
 
+    <footer>
+      Fonte de busca:
+      <a href="https://giphy.com" target="_blank"
+        ><img src="./giphy-logo.svg" alt="giphy-logo"
+      /></a>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>
